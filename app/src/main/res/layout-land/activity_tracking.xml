@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="me.ekhaled1836.activitytracker.TrackingActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tracking_timeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:freezesText="false"
+        android:gravity="center_horizontal"
+        android:text="@string/default_clock"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        app:layout_constraintEnd_toEndOf="@id/tracking_meanPaceHintText"
+        app:layout_constraintStart_toStartOf="@id/tracking_paceHintText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tracking_timeHintText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:freezesText="false"
+        android:gravity="center_horizontal"
+        android:text="@string/hint_time"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textColor="@color/textHint"
+        app:layout_constraintEnd_toEndOf="@id/tracking_meanPaceHintText"
+        app:layout_constraintStart_toStartOf="@id/tracking_paceHintText"
+        app:layout_constraintTop_toBottomOf="@id/tracking_timeText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tracking_paceText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:freezesText="false"
+        android:gravity="center_horizontal"
+        android:text="@string/default_clock"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintEnd_toEndOf="@id/tracking_paceHintText"
+        app:layout_constraintStart_toStartOf="@id/tracking_paceHintText"
+        app:layout_constraintTop_toBottomOf="@id/tracking_timeHintText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tracking_paceHintText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:freezesText="false"
+        android:text="@string/hint_pace"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textColor="@color/textHint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tracking_paceText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tracking_meanPaceText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:freezesText="false"
+        android:gravity="center_horizontal"
+        android:text="@string/default_clock"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintEnd_toEndOf="@id/tracking_meanPaceHintText"
+        app:layout_constraintStart_toStartOf="@id/tracking_meanPaceHintText"
+        app:layout_constraintTop_toBottomOf="@id/tracking_timeHintText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tracking_meanPaceHintText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:freezesText="false"
+        android:text="@string/hint_meanPace"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textColor="@color/textHint"
+        app:layout_constraintStart_toEndOf="@id/tracking_paceHintText"
+        app:layout_constraintTop_toBottomOf="@id/tracking_paceText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tracking_activeTimeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:freezesText="false"
+        android:gravity="center_horizontal"
+        android:text="@string/default_clock"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintEnd_toEndOf="@id/tracking_paceHintText"
+        app:layout_constraintStart_toStartOf="@id/tracking_paceHintText"
+        app:layout_constraintTop_toBottomOf="@id/tracking_paceHintText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tracking_activeTimeHintText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:freezesText="false"
+        android:gravity="center_horizontal"
+        android:text="@string/hint_activeTime"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textColor="@color/textHint"
+        app:layout_constraintEnd_toEndOf="@id/tracking_paceHintText"
+        app:layout_constraintStart_toStartOf="@id/tracking_paceHintText"
+        app:layout_constraintTop_toBottomOf="@id/tracking_activeTimeText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tracking_distanceText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:freezesText="false"
+        android:gravity="center_horizontal"
+        android:text="@string/default_distance"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintEnd_toEndOf="@id/tracking_meanPaceHintText"
+        app:layout_constraintStart_toStartOf="@id/tracking_meanPaceHintText"
+        app:layout_constraintTop_toBottomOf="@id/tracking_meanPaceHintText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tracking_distanceHintText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:freezesText="false"
+        android:gravity="center_horizontal"
+        android:text="@string/hint_distance"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textColor="@color/textHint"
+        app:layout_constraintEnd_toEndOf="@id/tracking_meanPaceHintText"
+        app:layout_constraintStart_toStartOf="@id/tracking_meanPaceHintText"
+        app:layout_constraintTop_toBottomOf="@id/tracking_distanceText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tracking_startStopButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:freezesText="true"
+        android:text="@string/action_startTracking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tracking_meanPaceHintText"
+        app:layout_constraintStart_toStartOf="@id/tracking_paceHintText" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/tracking_unitsCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1.5dp"
+        android:checked="true"
+        android:freezesText="false"
+        android:text="@string/hint_units"
+        app:layout_constraintBottom_toTopOf="@id/tracking_startStopButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tracking_meanPaceHintText">
+
+        <fragment
+            android:id="@+id/tracking_mapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
